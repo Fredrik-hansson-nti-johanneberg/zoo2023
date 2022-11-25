@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    margin: 0px;
+}
+
+#huvudGrid{
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 75px 50px auto 50px;
+    grid-template-areas: 
+    "hd hd hd hd"
+    "nav nav nav nav"
+    "main main main main"
+    "ft ft ft ft"
+    ;
+}
+
+header{
+    background-color: black;
+    grid-area: hd;
+    display: flex;
+    justify-content: center;    
+}
+
+nav{
+    display: flex;
+    grid-area: nav;
+    background-color: wheat;
+    justify-content: space-around;
+}
+
+a{
+    color: wheat;
+    text-decoration-line: none;
+    height: 100%;
+}
+
+button{
+    border: none;
+    color: wheat;
+    height: 100%;
+    width: 33.333vw;
+    background-color: black;
+    transform: 1s;
+    border-radius: 30px;
+}
+
+button:hover{
+
+    opacity: 0.9;
+}
+
+main{
+    height: auto;
+    background-color: wheat;
+    grid-area: main;
+    display: grid;
+}
+
+
+
+
+
+
+
+footer{
+
+    grid-area: ft;
+}
+
+
+
+
+h1{
+    color: wheat;
+}
+
+p{
+    color: tomato;
+}
