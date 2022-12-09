@@ -8,7 +8,7 @@ body{
     display: grid;
     height: 100vh;
     width: 100%;
-    grid-template-rows: 75px 70px auto 50px;
+    grid-template-rows: auto 70px auto 50px;
     grid-template-areas: 
     "hd"
     "nav"
@@ -21,7 +21,8 @@ header{
     background-color: black;
     grid-area: hd;
     display: flex;
-    justify-content: center;    
+    justify-content: center;  
+    font-size: 1.5rem;  
 }
 
 nav{
@@ -30,13 +31,12 @@ nav{
     background-color: wheat; 
     justify-content: space-around; 
     width: 100%;
-    border-radius: 30px;
+    
 }
 
 a{
     display: flex;
     flex:1;
-    
 }
 
 
@@ -79,6 +79,7 @@ p{
     display: flex;
     align-items: center;
     gap: 30px;
+    
 }
 
 .valkommen{
@@ -93,30 +94,48 @@ p{
 }
 
 #recention{
-    display: flex;
-    justify-content: space-between;
+    
     gap: 30px;
     width: 100%;
     padding: 10px;
     height: auto;
     flex-wrap: nowrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    grid-template-areas:
+    "rec rec"
+    "rec1 rec2" ;
     
 }
-
-.recension1{
-    grid-area: rec1;
-    height: auto;
-    background-color: tomato;
-    width: 50%;
+.recension{
+grid-area: rec;
+display: flex;
+justify-content: center;
+font-size: 2rem;
 }
 
-
-.recension2{
-    grid-area: rec2;
+.recensioner{
     height: auto;
     width: auto;
     background-color: tomato;
-    width: 50%;
+    border-radius: 30px;
+    padding-left: 20px;
+    border-style: double; 
+}
+
+#recension1{
+    grid-area: rec1;
+}
+
+
+#recension2{
+    grid-area: rec2;    
+}
+
+h4{
+font-size: 1.2rem;
+
 }
 
 
