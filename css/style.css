@@ -37,27 +37,26 @@ a{
     display: flex;
     flex:1;
     text-decoration: none;
-}
-
-
-button{
     border: none;
     color: wheat;
     height: 100%;
     width: 100%;
     background-color: black;
-    transform: 1s; 
+    transition-delay: 250ms; 
+    justify-content: center;
+    align-items: center;
 }
-
-button:hover{
+a:hover{
     opacity: 0.9;
     cursor: pointer;
 }
+
 
 main{
     height: auto;
     background-color: wheat;
     grid-area: main;
+    gap: 30px;
 }
 
 footer{
@@ -73,7 +72,7 @@ h1{
 }
 
 p{
-    color: tan;
+    color: wheat;
     font-family: sans-serif;
 }
 
@@ -85,16 +84,21 @@ p{
     gap: 30px;  
 }
 
-.h2{
+h2{
     display: flex;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 2.5rem;
+    font-family: serif;
+}
+
+h3{
     font-family: serif;
 }
 
 .index_bild{
     border-radius: 30px;  
     width: 85%;  
+    border-style: double;
 }
 
 #recention{
@@ -115,6 +119,7 @@ p{
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    
 }
 
 .recensioner{
@@ -124,6 +129,7 @@ p{
     border-radius: 30px;
     padding-left: 20px;
     border-style: double; 
+    box-shadow: 4px 4px black;
 }
 
 #recension1{
@@ -168,4 +174,73 @@ h4{
 
 #salad{
     grid-area: sal;
+}
+
+.vi_som{
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "ans1 ans2 ans3 ans4"
+    "ans5 ans6 ans7 ans8"
+    ;
+    gap: 30px;
+    margin: 30px;
+}
+
+.anstallda{
+    padding: 20px;
+    background-color: tomato;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    border-radius: 30px;
+    border-style: double;
+    height: auto;
+    box-shadow: 4px 4px black;
+}
+
+#anstalld1{
+    grid-area: ans1;
+}
+
+#anstalld2{
+    grid-area: ans2;
+}
+
+#anstalld3{
+    grid-area: ans3;
+}
+
+#anstalld4{
+    grid-area: ans4;
+}
+
+#anstalld5{
+    grid-area: ans5;
+}
+
+#anstalld6{
+    grid-area: ans6;
+}
+
+#anstalld7{
+    grid-area: ans7;
+}
+
+#anstalld8{
+    grid-area: ans8;
+}
+
+.personer{
+    width: 18vw;
+    border-radius: 30px;
+    border-style: double;
+   
+    
 }
