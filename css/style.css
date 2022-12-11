@@ -7,7 +7,7 @@ body{
     display: grid;
     height: 100vh;
     width: 100%;
-    grid-template-rows: auto 70px auto 50px;
+    grid-template-rows: auto 70px auto auto;
     grid-template-areas: 
     "hd"
     "nav"
@@ -49,10 +49,13 @@ a:hover{
 }
 
 main{
-    height: auto;
     background-color: wheat;
     grid-area: main;
     gap: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
 }
 
 footer{
@@ -62,15 +65,27 @@ footer{
     justify-content: space-evenly;
 }
 
-.kontakt{
+.footer_h2{
     color: wheat;
     font-size: 2rem;
+    justify-content: start;
 }
+
+.map_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    
+}
+
 
 .map{
     width:400px;
     height: 300px;
     border-radius: 30px;
+    margin-top: 10px;
 }
 
 h1{
@@ -87,7 +102,10 @@ h2{
 
 h3{
     font-family: serif;
-    color: wheat;
+    color: black;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
 }
 
 h4{
@@ -97,6 +115,17 @@ h4{
 p{
     color: wheat;
     font-family: sans-serif;
+}
+
+.div_footer{
+    padding: 20px;
+
+}
+
+.footer_h3{
+    font-size: 1.5rem;
+    justify-content: start;
+    color: wheat;
 }
 
 .indexMainDiv{
@@ -142,13 +171,12 @@ p{
     border-radius: 30px;
     padding-left: 20px;
     border-style: double; 
-    box-shadow: 4px 4px black;
+    box-shadow: 4px 4px 10px 5px black ;
 }
 
 #recension1{
     grid-area: rec1;
 }
-
 
 #recension2{
     grid-area: rec2;    
@@ -164,7 +192,14 @@ p{
 
 
 
-
+.vilka_ar_vi_div{
+    background-color: tomato;
+    border-radius: 30px;
+    padding: 8px 13px 13px 13px;
+    width: 80%;
+    border-style: double;
+    box-shadow: 4px 4px 10px 5px black ;
+}
 
 .vi_som{
     display: flex;
@@ -193,7 +228,7 @@ p{
     border-radius: 30px;
     border-style: double;
     height: auto;
-    box-shadow: 4px 4px black;
+    box-shadow: 4px 4px 10px 5px black ;
 }
 
 #anstalld1{
