@@ -1,7 +1,6 @@
 body{
     background-color: black;
     margin: 0px;
-    width: 100%;
 }
 
 #huvudGrid{
@@ -29,28 +28,25 @@ nav{
     display: flex;
     grid-area: nav;
     background-color: wheat; 
-    justify-content: space-around; 
-    width: 100%; 
 }
 
 a{
     display: flex;
     flex:1;
     text-decoration: none;
-    border: none;
     color: wheat;
-    height: 100%;
-    width: 100%;
     background-color: black;
-    transition-delay: 250ms; 
+    transition-duration: 0.25s;
     justify-content: center;
     align-items: center;
 }
+
 a:hover{
     opacity: 0.9;
     cursor: pointer;
+    height: 110%;
+    width: 110%;
 }
-
 
 main{
     height: auto;
@@ -66,9 +62,36 @@ footer{
     justify-content: space-evenly;
 }
 
+.kontakt{
+    color: wheat;
+    font-size: 2rem;
+}
+
+.map{
+    width:400px;
+    height: 300px;
+    border-radius: 30px;
+}
+
 h1{
     color: wheat;
     font-family:  serif;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    font-family: serif;
+}
+
+h3{
+    font-family: serif;
+    color: wheat;
+}
+
+h4{
+    font-size: 1.2rem;
 }
 
 p{
@@ -82,17 +105,6 @@ p{
     display: flex;
     align-items: center;
     gap: 30px;  
-}
-
-h2{
-    display: flex;
-    justify-content: center;
-    font-size: 2.5rem;
-    font-family: serif;
-}
-
-h3{
-    font-family: serif;
 }
 
 .index_bild{
@@ -119,6 +131,7 @@ h3{
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    color: black;
     
 }
 
@@ -141,45 +154,23 @@ h3{
     grid-area: rec2;    
 }
 
-h4{
-    font-size: 1.2rem;
-}
 
 
-#meny{
-    padding: 30px;
-    display: grid;
-    gap: 15px;
-    grid-template-areas: 
-    "bar piz "
-    "sal ."
-    ;
-}
-
-.mat{
-    background-color: white;
-    width: fit-content;
-    border-radius: 30px;
-    padding: 20px; 
-}
-
-#bar{
-    grid-area: bar;
-}
-
-#pizza{
-    grid-area: piz;
-}
 
 
-#salad{
-    grid-area: sal;
-}
+
+
+
+
+
+
+
 
 .vi_som{
     display: flex;
     justify-content: center;
     font-size: 2rem;
+    color: black;
 }
 
 .cards{
@@ -240,7 +231,5 @@ h4{
 .personer{
     width: 18vw;
     border-radius: 30px;
-    border-style: double;
-   
-    
+    border-style: double; 
 }
