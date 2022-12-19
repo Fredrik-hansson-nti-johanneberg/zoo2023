@@ -124,6 +124,11 @@ p{
     color: wheat;
 }
 
+img{
+    border-radius: 30px;
+    border-style: double;
+}
+
 .indexMainDiv{
     padding: 30px;
     flex-direction: column;
@@ -133,9 +138,8 @@ p{
 }
 
 .index_bild{
-    border-radius: 30px;  
+     
     width: 85%;  
-    border-style: double;
 }
 
 #recention{
@@ -258,7 +262,47 @@ p{
 }
 
 .personer{
-    width: 18vw;
+    width: 18vw;  
+}
+
+
+
+.bild_pa_djur{
+    height: auto;
+    width: 80%;
+    background-color: tomato;
     border-radius: 30px;
+    padding-left: 20px;
     border-style: double; 
+    box-shadow: 4px 4px 10px 5px black ;
+}
+
+
+.alla_djur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+    
+
+}
+
+
+
+.djur{
+    width: 33%; 
+    padding: 20px;  
+    background-color: wheat;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    border-radius: 30px;
+    border-style: double;
+    box-shadow: 4px 4px 10px 5px black ;
+}
+
+
+.djur_img{
+    width: 100%;
+
 }
