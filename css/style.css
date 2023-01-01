@@ -1,11 +1,10 @@
 body{
-    background-color: black;
+    background-color: rgb(64, 99, 67);
     margin: 0px;
 }
 
 #huvudGrid{
     display: grid;
-    height: 100vh;
     width: 100%;
     grid-template-rows: auto 70px auto auto;
     grid-template-areas: 
@@ -16,7 +15,7 @@ body{
 }
 
 header{
-    background-color: black;
+    background-color: rgb(50, 80, 46);
     grid-area: hd;
     display: flex;
     justify-content: center;  
@@ -26,15 +25,15 @@ header{
 nav{
     display: flex;
     grid-area: nav;
-    background-color: wheat; 
+    background-color: rgb(243, 239, 204); 
 }
 
 a{
     display: flex;
     flex:1;
     text-decoration: none;
-    color: wheat;
-    background-color: black;
+    color: rgb(243, 239, 204);
+    background-color: rgb(64, 99, 67);
     transition-duration: 0.25s;
     justify-content: center;
     align-items: center;
@@ -48,7 +47,7 @@ a:hover{
 }
 
 main{
-    background-color: wheat;
+    background-color: rgb(243, 239, 204);
     grid-area: main;
     gap: 30px;
     display: flex;
@@ -58,14 +57,20 @@ main{
 
 footer{
     grid-area: ft;
-    background-color: black;
+    background-color: rgb(50, 80, 46);
     display: flex;
     justify-content: space-evenly;
 }
 
 .footer_h2{
-    color: wheat;
+    color: rgb(243, 239, 204);
     font-size: 2rem;
+    justify-content: start;
+}
+
+.footer_h3{
+    color: rgb(243, 239, 204);
+    font-size: 1.5rem;
     justify-content: start;
 }
 
@@ -86,7 +91,7 @@ footer{
 }
 
 h1{
-    color: wheat;
+    color: rgb(243, 239, 204);
     font-family:  serif;
 }
 
@@ -95,11 +100,12 @@ h2{
     justify-content: center;
     font-size: 2.5rem;
     font-family: serif;
+    color: rgb(50, 80, 46);
 }
 
 h3{
     font-family: serif;
-    color: black;
+    color: rgb(243, 239, 204);
     font-size: 2rem;
     display: flex;
     justify-content: center;
@@ -107,10 +113,11 @@ h3{
 
 h4{
     font-size: 1.2rem;
+    color: rgb(243, 239, 204);
 }
 
 p{
-    color: wheat;
+    color: rgb(243, 239, 204);
     font-family: sans-serif;
 }
 
@@ -118,15 +125,10 @@ p{
     padding: 20px;
 }
 
-.footer_h3{
-    font-size: 1.5rem;
-    justify-content: start;
-    color: wheat;
-}
-
 img{
     border-radius: 30px;
     border-style: double;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.155)
 }
 
 .indexMainDiv{
@@ -137,19 +139,19 @@ img{
     gap: 30px;  
 }
 
-.index_bild{
-     
-    width: 85%;  
-}
 
 #recention{
     gap: 30px;
-    width: 100%;
     padding: 10px;
     height: auto;
     flex-wrap: nowrap;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-color: rgb(64, 99, 67);
+    border-radius: 30px;
+    border-style: double;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.644) ;
+    padding: 30px;
+    margin: 20px;
     grid-template-areas:
     "rec rec"
     "rec1 rec2" ;
@@ -160,17 +162,17 @@ img{
     display: flex;
     justify-content: center;
     font-size: 2rem;
-    color: black;
+    color: rgb(243, 239, 204);
 }
 
 .recensioner{
     height: auto;
     width: auto;
-    background-color: tomato;
+    background-color: rgb(50, 80, 46);
     border-radius: 30px;
-    padding-left: 20px;
     border-style: double; 
-    box-shadow: 4px 4px 10px 5px black ;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.185) ;
+    padding-left: 30px;
 }
 
 #recension1{
@@ -178,55 +180,53 @@ img{
 }
 
 #recension2{
-    grid-area: rec2;    
+    grid-area: rec2;  
 }
-
-
-
-
-
-
-
 
 
 
 
 .vilka_ar_vi_div{
-    background-color: tomato;
+    background-color: rgb(64, 99, 67);
     border-radius: 30px;
     padding: 8px 13px 13px 13px;
     width: 80%;
     border-style: double;
-    box-shadow: 4px 4px 10px 5px black ;
-}
-
-.vi_som{
-    display: flex;
-    justify-content: center;
-    font-size: 2rem;
-    color: black;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.644)
 }
 
 .cards{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas: 
+    "vi vi vi vi"
     "ans1 ans2 ans3 ans4"
     "ans5 ans6 ans7 ans8";
     gap: 30px;
-    margin: 30px;
+    margin: 50px; 
+    background-color: rgb(64, 99, 67);
+    padding: 30px;
+    border-radius: 30px;
+    border-style: double;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.644)
+
+}
+
+.vi_som{
+    font-size: 2rem;
+    grid-area: vi ;
 }
 
 .anstallda{
     padding: 20px;
-    background-color: tomato;
+    background-color: rgb(50, 80, 46);
     display: flex;
     flex-direction: column; 
     align-items: center;
     border-radius: 30px;
     border-style: double;
     height: auto;
-    box-shadow: 4px 4px 10px 5px black ;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.185)
 }
 
 #anstalld1{
@@ -262,19 +262,19 @@ img{
 }
 
 .personer{
-    width: 18vw;  
+    width: 100%;  
 }
 
 
 
-.bild_pa_djur{
-    height: auto;
-    width: 80%;
-    background-color: tomato;
+.vara_djur{
+    background-color: rgb(64, 99, 67);
     border-radius: 30px;
     padding-left: 20px;
     border-style: double; 
-    box-shadow: 4px 4px 10px 5px black ;
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.644);
+    padding: 30px;
+    margin: 30px;
 }
 
 
@@ -282,27 +282,18 @@ img{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    gap: 20px;
-    
-
+    gap: 30px;
+    margin: 30px;
 }
 
-
-
 .djur{
-    width: 33%; 
+    width: 350px; 
     padding: 20px;  
-    background-color: wheat;
+    background-color: rgb(50, 80, 46);
     display: flex;
     flex-direction: column; 
     justify-content: center;
     border-radius: 30px;
     border-style: double;
-    box-shadow: 4px 4px 10px 5px black ;
-}
-
-
-.djur_img{
-    width: 100%;
-
+    box-shadow: 4px 4px 10px 5px rgba(0, 0, 0, 0.185)
 }
