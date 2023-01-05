@@ -50,6 +50,7 @@ main{
     background-color: rgb(243, 239, 204);
     grid-area: main;
     gap: 30px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -139,6 +140,9 @@ img{
     gap: 30px;  
 }
 
+.banner{
+    width: 85vw;
+}
 
 #recention{
     gap: 30px;
